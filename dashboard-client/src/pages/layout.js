@@ -18,6 +18,9 @@ const Layout = () => {
                         <Link to="/page2]">Page 2</Link>
                     </li>
                     <li>
+                        <Link to="/graph">Graph</Link>
+                    </li>
+                    <li>
                         <Link to="/nothing-here">Nothing Here</Link>
                     </li>
                 </ul>

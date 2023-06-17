@@ -1,12 +1,12 @@
-import './App.css';
+import './scss/style.scss'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import Layout from './pages/layout';
-import Home from './pages/home';
-import Page1 from'./pages/page1';
-import Page2 from './pages/page2';
-import Graph from './pages/graph';
-import NoPage from './pages/nopage';
+import Layout from './layout/Layout';
+import Home from './components/Home';
+import Page1 from'./components/Page1';
+import Page2 from './components/Page2';
+import Graph from './components/Graph';
+import NoPage from './components/NoPage';
 
 const App = () => {
   return (

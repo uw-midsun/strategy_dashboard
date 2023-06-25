@@ -6,8 +6,8 @@ const Layout = () => {
     return (
         <div>
             <Sidebar />
-            <div className="wrapper d-flex flex-column">
-                <div className="body flex-grow-1 px-3">
+            <div className="wrapper d-flex flex-column min-vh-100">
+                <div className="content flex-grow-1 p-3">
                     <Outlet />
                 </div>
             </div>

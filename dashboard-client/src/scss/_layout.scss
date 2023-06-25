@@ -1,6 +1,13 @@
 .wrapper {
-  width: 100%;
   @include ltr-rtl("padding-left", var(--cui-sidebar-occupy-start, 0));
-  will-change: auto;
   @include transition(padding .15s);
+  will-change: auto;
+  width: 100%;
+  padding-top: 10px;
+  background-color: #312639;
+}
+
+.content {
+    background-color: white;
+    border-radius: 20px 0px 0px 0px;
 }

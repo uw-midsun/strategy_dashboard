@@ -1,10 +1,16 @@
 import mysql.connector
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+db_password = os.environ['DB_PASSWORD']
 
 # Establish the database connection
 db = mysql.connector.connect(
     host="strategy-dev.mysql.database.azure.com",
     user="dev",
-    password="midsundev24",
+    password=db_password,
     database="location_service"
 )
 

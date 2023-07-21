@@ -2,9 +2,13 @@ from fastapi import FastAPI
 import uvicorn
 import mysql.connector
 import json
-from fastapi.responses import JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
+
+db_password = os.environ['DB_PASSWORD']
 
 
 app = FastAPI()
@@ -20,7 +24,7 @@ def get_db_connection():
     connection = mysql.connector.connect(
        host="strategy-dev.mysql.database.azure.com",
         user="dev",
-        password="midsundev24",
+        password=db_password,
         database="location_service"
     )
     return connection
